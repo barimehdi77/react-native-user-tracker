@@ -1,6 +1,6 @@
 {
   "name": "@matjarawal/react-native-user-tracker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Effortlessly track user interactions in React Native with 'react-native-user-tracker,' sending customizable data to your specified host and endpoint.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
