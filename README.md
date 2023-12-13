@@ -11,11 +11,31 @@ npm install react-native-user-tracker
 ## Usage
 
 ```js
-import { multiply } from 'react-native-user-tracker';
+import Tracker from 'react-native-user-tracker';
+import type {
+  AppTrackerConfiguration,
+  NetworkConfiguration,
+  TrackedUserConfiguration,
+} from '../../src/types';
 
 // ...
 
-const result = await multiply(3, 7);
+export default function App() {
+  const nework: NetworkConfiguration = {
+    host: 'localhost:8080/',
+    endpoint: '/collector',
+    method: 'post',
+  };
+  const appTracker: AppTrackerConfiguration = {
+    appId: 'example app',
+    appLanguage: 'en',
+    devicePlatform: Platform.OS,
+  };
+  const trackedUser: TrackedUserConfiguration = {
+    userId: '77',
+  };
+
+  const tracker = new Tracker(nework, appTracker, trackedUser);
 ```
 
 ## Contributing
