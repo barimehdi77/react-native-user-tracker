@@ -10,7 +10,7 @@ npm install react-native-user-tracker
 
 ## Usage
 
-```js
+```ts
 import Tracker from 'react-native-user-tracker';
 import type {
   AppTrackerConfiguration,
@@ -36,6 +36,12 @@ export default function App() {
   };
 
   const tracker = new Tracker(nework, appTracker, trackedUser);
+  return (
+    <View style={styles.container}>
+      <Text>Start integration the package with your application</Text>
+    </View>
+  );
+}
 ```
 
 ## Contributing
